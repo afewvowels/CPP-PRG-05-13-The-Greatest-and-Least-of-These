@@ -50,26 +50,23 @@ int main()
     
     while(intToTest != -99)
     {
-        if(intToTest != -99)
+        cout << "Please enter a number:\n";
+        cin >> intToTest;
+        
+        while(intToTest <= -1000 && intToTest >= 1000)
         {
-            cout << "Please enter a number:\n";
+            cout << "Please enter a number from -999 to 999:\n";
             cin >> intToTest;
-            
-            while(intToTest <= -1000 && intToTest >= 1000)
-            {
-                cout << "Please enter a number from -999 to 999:\n";
-                cin >> intToTest;
-            }
-            
-            if(intToTest > intLargest && intToTest != -99)
-            {
-                intLargest = intToTest;
-            }
-            
-            if(intToTest < intSmallest && intToTest != -99)
-            {
-                intSmallest = intToTest;
-            }
+        }
+        
+        if(intToTest > intLargest && intToTest != -99)
+        {
+            intLargest = intToTest;
+        }
+        
+        if(intToTest < intSmallest && intToTest != -99)
+        {
+            intSmallest = intToTest;
         }
     }
     
